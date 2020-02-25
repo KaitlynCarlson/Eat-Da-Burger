@@ -15,6 +15,6 @@ INSERT INTO burgers
 VALUES("Wild Onion Bill BBQ Burger");
 INSERT INTO burgers
     (burger_name)
-VALUES("Double Grilled Cheese Double Patty Belly ");
+VALUES("Double Grilled Cheese Double Patty Belly Breaker");
 SELECT *
 FROM burgers;
