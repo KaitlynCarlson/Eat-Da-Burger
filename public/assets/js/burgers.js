@@ -1,7 +1,7 @@
 $(function() {
   $(".devourIt").on("click", function(event) {
     let id = $(this).data("id");
-    let devouredIt = $(this).data("devouredIt");
+    let devouredIt = $(this).data("devoured");
 
     let devoured = {
       devoured: devouredIt
@@ -11,7 +11,6 @@ $(function() {
       type: "PUT",
       data: devoured
     }).then(function() {
-      console.log("Nom nom npm", devouredIt);
       location.reload();
     });
   });

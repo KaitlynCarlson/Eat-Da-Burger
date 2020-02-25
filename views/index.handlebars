@@ -31,15 +31,7 @@
             <div class="container" id="available">
                 {{#each burgers}}
                 {{#unless devoured}}
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title"> #{{this.id}} {{this.burger_name}}
-                        </h5>
-                        <button data-id=' {{this.id}}' data-devoured='{{this.devoured}}' class='devourIt btn'>Devour
-                            it!</button>
-                    </div>
-                </div>
+                {{> burgers/burger-block devoured=false}}
                 {{/unless}}
                 {{/each}}
             </div>
@@ -51,16 +43,9 @@
         </div>
         <div class="container-fluid">
             <div class="container" id="unavailable">
-                {{#each burgers}} {{#if devoured}}
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title"> #{{this.id}} {{this.burger_name}}
-                        </h5>
-                        <button data-id='{{this.id}}' data-devoured='{{this.devoured}}' class='prep btn'>Prep
-                            it!</button>
-                    </div>
-                </div>
+                {{#each burgers}}
+                {{#if devoured}}
+                {{> burgers/burger-block devoured=true}}
                 {{/if}}
                 {{/each}}
             </div>

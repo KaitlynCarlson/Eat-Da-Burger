@@ -1,0 +1,23 @@
+{{#unless devoured}}
+<div class="card" style="width: 18rem;">
+    <img src="" class="card-img-top" alt="">
+    <div class="card-body">
+        <h5 class="card-title"> #{{this.id}} {{this.burger_name}}
+        </h5>
+        <button data-id=' {{this.id}}' data-devoured='{{this.devoured}}' class='devourIt btn'>Devour
+            it!</button>
+    </div>
+</div>
+{{/unless}}
+
+{{#if devoured}}
+<div class="card" style="width: 18rem;">
+    <img src="" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title"> #{{this.id}} {{this.burger_name}}
+        </h5>
+        <button data-id='{{this.id}}' data-devoured='{{this.devoured}}' class='prep btn'>Prep
+            it!</button>
+    </div>
+</div>
+{{/if}}
