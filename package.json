@@ -1,0 +1,24 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaitlynCarlson/burger.git"
+  },
+  "author": "Kaitlyn Carlson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaitlynCarlson/burger/issues"
+  },
+  "homepage": "https://github.com/KaitlynCarlson/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "mysql": "^2.18.1"
+  }
+}
