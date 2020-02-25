@@ -1,0 +1,52 @@
+<div id="all" style="padding:50px;">
+    <div id="burgerBuilder" class="row">
+        <div class="col-lg-3"> <img src="https://cdn.pixabay.com/photo/2014/04/02/10/49/burger-304707_960_720.png"
+                width="200px" height="200px" class="card-img-top" alt="...">
+        </div>
+        <div class="card-body col-lg-9">
+            {{!-- <img src="https://cdn.pixabay.com/photo/2013/07/13/10/52/bar-157942_960_720.png" height="80px;"> --}}
+            <h5 class="card-title">Build Your Burger</h5>
+            <p class="card-text">Creating monstrosities with care.</p>
+            <form>
+                <div class="form-group">
+                    <label for="burger">Cough up the Cow Below</label>
+                    <input type="text" class="form-control" id="burger" height="500px">
+                    <button type="submit" class="btn btn-info" id="submitBurger" style="margin-top:20px;">Burger
+                        Up</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <h6 class="col-6 display-4">Up for Grabs</h6>
+    <h6 class="col-6 display-4">Gobbled Down</h6>
+</div>
+
+
+{{#each burgers}}
+{{#unless devoured}}
+<div class="card" style="width: 18rem;">
+    <img src="" class="card-img-top" alt="">
+    <div class="card-body">
+        <h5 class="card-title"> #{{this.id}} {{this.burger_name}}
+        </h5>
+        <button data-id=' {{this.id}}' data-devoured='{{this.devoured}}' class='devourIt btn btn-info'>Devour
+            it!</button>
+    </div>
+</div>
+{{/unless}}
+{{/each}}
+{{#each burgers}} {{#if devoured}}
+<div class="card" style="width: 18rem;">
+    <img src="" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title"> #{{this.id}} {{this.burger_name}}
+        </h5>
+        <button data-id='{{this.id}}' data-devoured='{{this.devoured}}' class='prep btn btn-info'>Prep
+            it!</button>
+    </div>
+</div>
+{{/if}}
+{{/each}}
+</div>
