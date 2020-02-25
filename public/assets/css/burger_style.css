@@ -1,3 +1,46 @@
 h6 {
   text-align: center;
 }
+#burgerBuilder {
+  align-items: right;
+  justify-items: center;
+}
+.btn {
+  color: white;
+  background-color: #5fa35a;
+}
+#menu {
+  background-image: url("https://storage.needpix.com/rsynced_images/seamless-1082983_1280.jpg");
+}
+#available {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+}
+#siteTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  margin: 1%;
+}
+.jumbotron {
+  margin-bottom: 0px;
+  background-color: white;
+}
+.title {
+  background-color: #5fa35a;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  padding: 1%;
+}
+#available {
+  padding: 5%;
+  justify-content: center;
+}
