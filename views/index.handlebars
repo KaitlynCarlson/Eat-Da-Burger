@@ -32,7 +32,7 @@
         <div class="container" id="available">
             {{#each burgers}}
             {{#unless devoured}}
-            {{> burgers/burger-block devoured=false}}
+            {{> burgers/burger-block devoured=true}}
             {{/unless}}
             {{/each}}
         </div>
@@ -46,7 +46,7 @@
         <div class="container" id="unavailable">
             {{#each burgers}}
             {{#if devoured}}
-            {{> burgers/burger-block devoured=true}}
+            {{> burgers/burger-block devoured=false}}
             {{/if}}
             {{/each}}
         </div>

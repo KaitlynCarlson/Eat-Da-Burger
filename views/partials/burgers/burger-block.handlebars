@@ -3,8 +3,8 @@
         <h5 class="card-title"> #{{this.id}} {{this.burger_name}}
         </h5>
         <hr class="my-4">
-        <button data-id=' {{this.id}}' data-devoured='{{this.devoured}}' class='devourIt btn'>
-            {{#unless devoured}}Devour it!{{else}}Prep it!{{/unless}} </button>
+        <button class='changeState btn' data-id='{{this.id}}' data-devouredit='{{devoured}}'>
+            {{#if devoured}}Devour it!{{else}}Prep it!{{/if}} </button>
 
     </div>
 </div>

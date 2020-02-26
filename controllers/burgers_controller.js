@@ -1,7 +1,7 @@
 "use strict";
 const express = require("express");
-const burger = require("../models/burger");
 const router = express.Router();
+const burger = require("../models/burger");
 
 router.get("/", (req, res) => {
   burger.selectAll(function(data) {
@@ -13,28 +13,30 @@ router.get("/", (req, res) => {
   });
 });
 
-router.post("/api/burgers", (req, res) => {
-  burgers.createOne(
-    ["name", "devoured"],
-    [req.body.burger_name, req.body.devoured],
+router.post("/api/burgers", function(req, res) {
+  burger.createOne(
+    ["burger_name", "devoured"],
+    [req.body.burger_name, req.body.devouredIt],
     function(result) {
       res.json({ id: result.insertId });
     }
   );
 });
 
-router.put("/api/burgers/:id", (req, res) => {
+router.put("/api/burgers/:id", function(req, res) {
   const condition = "id = " + req.params.id;
 
   console.log("condition", condition);
 
   burger.updateOne(
     {
-      devoured: req.body.devoured
+      devoured: !req.params.devoured
     },
     condition,
     function(result) {
       if (result.changedRows == 0) {
+        console.log("Error");
+
         return res.status(404).end();
       } else {
         res.status(200).end();
