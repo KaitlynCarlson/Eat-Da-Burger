@@ -1,21 +1,25 @@
 h6 {
   text-align: center;
 }
-#burgerBuilder {
-  align-items: right;
-  justify-items: center;
-}
+
 .btn {
   color: white;
   background-color: #5fa35a;
 }
+
 #menu {
   background-image: url("https://storage.needpix.com/rsynced_images/seamless-1082983_1280.jpg");
 }
-#available {
+.condiments {
+  margin-top: 20px;
+}
+#available,
+#unavailable {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
+  padding: 5%;
+  justify-content: center;
 }
 #siteTitle {
   display: flex;
@@ -24,7 +28,7 @@ h6 {
 }
 
 .card {
-  margin: 1%;
+  margin: 5px;
 }
 .jumbotron {
   margin-bottom: 0px;
@@ -40,7 +44,11 @@ h6 {
   align-items: center;
   padding: 1%;
 }
-#available {
-  padding: 5%;
-  justify-content: center;
+.footer {
+  background-color: #5fa35a;
+  color: white;
+  padding: 2%;
+}
+#tagline {
+  font-size: 12px;
 }
