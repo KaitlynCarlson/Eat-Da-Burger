@@ -6,10 +6,25 @@ h6 {
   color: white;
   background-color: #5fa35a;
 }
-
+.nav2 {
+  background-color: red;
+  color: white;
+  opacity: 80%;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 7%;
+}
 #menu {
   background-image: url("https://storage.needpix.com/rsynced_images/seamless-1082983_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  width: 100%;
 }
+
 .condiments {
   margin-top: 20px;
 }
