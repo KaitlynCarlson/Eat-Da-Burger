@@ -13,7 +13,7 @@
             <form class="form-group">
                 <label for="burger" class="lead">Cough up a Cow-tastic Burger Recipe Below</label>
                 <input type="text" class="form-control" id="burg" height="500px">
-                <button type="submit" class="btn" id="submitBurger" style="margin-top:20px;">Burger
+                <button type="submit" class="btn" style="margin-top:20px;">Burger
                     Up</button>
             </form>
         </div>
@@ -30,7 +30,7 @@
         <div class="container" id="available">
             {{#each burgers}}
             {{#unless devoured}}
-            {{> burgers/burger-block devoured=true}}
+            {{> burgers/burger-block devour=true}}
             {{/unless}}
             {{/each}}
         </div>
@@ -44,7 +44,7 @@
         <div class="container" id="unavailable">
             {{#each burgers}}
             {{#if devoured}}
-            {{> burgers/burger-block devoured=false}}
+            {{> burgers/burger-block devour=false}}
             {{/if}}
             {{/each}}
         </div>

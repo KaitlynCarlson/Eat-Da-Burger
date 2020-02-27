@@ -1,16 +1,16 @@
 $(function() {
   $(".changeState").on("click", function(event) {
     const id = $(this).data("id");
-    const devouredIt = $(this).data("devoured");
+    const devoured = $(this).data("devoured");
     const devouredState = {
-      devoured: devouredIt
+      devoured: devoured
     };
 
     $.ajax("/api/burgers/" + id, {
       type: "PUT",
       data: devouredState
     }).then(function() {
-      console.log("changed sleep to", devouredState);
+      console.log("changed sleep to", devoured);
 
       location.reload();
     });

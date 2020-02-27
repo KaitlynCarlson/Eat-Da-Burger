@@ -21,12 +21,17 @@ router.post("/api/burgers", function(req, res) {
 
 router.put("/api/burgers/:id", function(req, res) {
   const condition = "id = " + req.params.id;
-
+  console.log(req.params.id);
   console.log("condition", condition);
-
+  let state;
+  if (req.body.devoured === "true") {
+    state = true;
+  } else if (req.body.devoured === "false") {
+    state = false;
+  }
   burger.updateOne(
     {
-      devoured: !req.params.devoured
+      devoured: state
     },
     condition,
     function(result) {
