@@ -67,3 +67,8 @@ h6 {
 #tagline {
   font-size: 12px;
 }
+#clearTable {
+  color: red;
+  background-color: #fbd52c;
+  padding: 10px 15px;
+}
