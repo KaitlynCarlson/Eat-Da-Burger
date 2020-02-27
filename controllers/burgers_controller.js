@@ -14,13 +14,9 @@ router.get("/", (req, res) => {
 });
 
 router.post("/api/burgers", function(req, res) {
-  burger.createOne(
-    ["burger_name", "devoured"],
-    [req.body.burger_name, req.body.devouredIt],
-    function(result) {
-      res.json({ id: result.insertId });
-    }
-  );
+  burger.createOne(["burger_name"], [req.body.burger_name], function(result) {
+    res.json({ id: result.insertId });
+  });
 });
 
 router.put("/api/burgers/:id", function(req, res) {
