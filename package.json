@@ -4,7 +4,9 @@
   "description": "A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM",
   "main": "server.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "jest run test",
+    "start": "npm run start",
+    "watch": "nodemon run server.js"
   },
   "repository": {
     "type": "git",

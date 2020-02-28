@@ -26,32 +26,32 @@ INSERT INTO burgers
     (burger_name)
 VALUES("Ooey-Gooey Mac 'N Cheese 'N Bacon Burger");
 INSERT INTO burgers
-    (burger_name)
-VALUES("For the Love of A Vegan (Filled with Plant-ish Ingredients)");
+    (burger_name, devoured)
+VALUES("For the Love of A Vegan (Filled with Plant-ish Ingredients)", true);
 INSERT INTO burgers
-    (burger_name)
-VALUES("Waffled Out in Maple Breakfast Sausage Patty");
+    (burger_name, devoured)
+VALUES("Waffled Out in Maple Breakfast Sausage Patty", true);
 INSERT INTO burgers
-    (burger_name)
-VALUES("Ghost Pepper Aioli and Arugula Filet Burger");
+    (burger_name,devoured)
+VALUES("Ghost Pepper Aioli and Arugula Filet Burger",true);
 INSERT INTO burgers
-    (burger_name)
-VALUES("That Jalapeno Sausage Jive");
+    (burger_name,devoured)
+VALUES("That Jalapeno Sausage Jive",true);
 INSERT INTO burgers
-    (burger_name)
-VALUES("Fried Egg-Attack");
+    (burger_name,devoured)
+VALUES("Fried Egg-Attack",true);
 INSERT INTO burgers
-    (burger_name)
-VALUES("Baby Back Brisket Burger");
+    (burger_name,devoured)
+VALUES("Baby Back Brisket Burger",true);
 INSERT INTO burgers
-    (burger_name)
-VALUES("Double Down Doobie Burger");
+    (burger_name,devoured)
+VALUES("Double Down Doobie Burger",true);
 INSERT INTO burgers
-    (burger_name)
-VALUES("Philly Style Whiz Wit");
+    (burger_name,devoured)
+VALUES("Philly Style Whiz Wit",true);
 INSERT INTO burgers
-    (burger_name)
-VALUES("French Onion Dippin' Burger Balls");
+    (burger_name,devoured)
+VALUES("French Onion Dippin' Burger Balls",true);
 
 
 SELECT *
