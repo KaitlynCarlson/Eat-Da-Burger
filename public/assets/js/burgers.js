@@ -33,7 +33,15 @@ $(function() {
       location.reload();
     });
   });
+  $("#clearData").on("click", function() {
+    $.ajax("/api/burgers", {
+      type: "DELETE"
+    }).then(function() {
+      location.reload();
+    });
+  });
 });
+
 AOS.init({
-  duration: 1200
+  duration: 100
 });

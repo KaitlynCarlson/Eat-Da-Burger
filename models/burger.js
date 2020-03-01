@@ -17,6 +17,11 @@ const burger = {
     orm.updateOne("burgers", objColVals, condition, function(res) {
       cb(res);
     });
+  },
+  dropData: function(cb) {
+    orm.dropData(function(res) {
+      cb(res);
+    });
   }
 };
 module.exports = burger;

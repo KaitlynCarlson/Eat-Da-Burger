@@ -15,7 +15,7 @@ function objToSql(ob) {
   const arr = [];
 
   for (const key in ob) {
-    const value = ob[key];
+    let value = ob[key];
     if (Object.hasOwnProperty.call(ob, key)) {
       if (typeof value === "string" && value.indexOf(" ") >= 0) {
         value = "'" + value + "'";
@@ -72,6 +72,15 @@ const orm = {
         throw err;
       }
 
+      cb(result);
+    });
+  },
+  dropData: function(cb) {
+    let queryString = `TRUNCATE TABLE burgers;`;
+    connection.query(queryString, (err, result) => {
+      if (err) {
+        throw err;
+      }
       cb(result);
     });
   }

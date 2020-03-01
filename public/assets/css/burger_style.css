@@ -73,6 +73,9 @@ h6 {
   background-color: #fbd52c;
   padding: 10px 15px;
 }
-#burger-image:hover {
-  transform: rotateY(130deg);
+#clearData:hover,
+#clearTable:hover {
+  border: 1px solid #fbd52c;
+  background-color: red;
+  color: #fbd52c;
 }
