@@ -37,6 +37,7 @@ $(function() {
     $.ajax("/api/burgers", {
       type: "DELETE"
     }).then(function() {
+      console.log("Menu deletion success!");
       location.reload();
     });
   });
