@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "jest run test",
-    "start": "npm run start",
+    "start": "node server.js",
     "watch": "nodemon run server.js"
   },
   "repository": {
