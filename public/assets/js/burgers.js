@@ -18,7 +18,9 @@ $(function() {
 
   $(".form-group").on("submit", function(event) {
     event.preventDefault();
-
+    if ($("#burg").val() === null || $("#burg").val() === "") {
+      alert("Field cannot be empty");
+    }
     const addBurger = {
       burger_name: $("#burg")
         .val()
