@@ -2,6 +2,10 @@
 
 Eat-Da-Burger! is a web app that lets users build their own burgers, devour existing burgers, and re-prep previously devoured burgers.
 
+This application is deployed to Heroku and utilizes JawsDB for MySQL.
+
+[Eat Da Burger](https://rocky-dusk-41654.herokuapp.com/)
+
 ## Table of Contents
 
 - [App Overview](#App-Overview)
@@ -49,6 +53,8 @@ If you would like to run this program locally follow the steps below:
 
 ## Technologies
 
+- Heroku
+- JAWS DB
 - JavaScript
 - Node.js
 - jQuery
@@ -56,4 +62,5 @@ If you would like to run this program locally follow the steps below:
 - Express.js
 - Handlebars.js
 - Bootstrap
+- AOS
 - HTML
