@@ -20,20 +20,21 @@ $(function() {
     event.preventDefault();
     if ($("#burg").val() === null || $("#burg").val() === "") {
       alert("Field cannot be empty");
-    }
-    const addBurger = {
-      burger_name: $("#burg")
-        .val()
-        .trim()
-    };
+    } else {
+      const addBurger = {
+        burger_name: $("#burg")
+          .val()
+          .trim()
+      };
 
-    $.ajax("/api/burgers", {
-      type: "POST",
-      data: addBurger
-    }).then(function() {
-      console.log("Burger creation success!");
-      location.reload();
-    });
+      $.ajax("/api/burgers", {
+        type: "POST",
+        data: addBurger
+      }).then(function() {
+        console.log("Burger creation success!");
+        location.reload();
+      });
+    }
   });
   $("#clearData").on("click", function() {
     $.ajax("/api/burgers", {
