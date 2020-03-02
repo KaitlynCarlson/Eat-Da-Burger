@@ -8,11 +8,11 @@ This application is deployed to Heroku and utilizes JawsDB for MySQL.
 
 ## Table of Contents
 
-- [App Overview](#App-Overview)
-- [How To Use](#How-To-Use)
 - [Purpose](#Purpose)
-- [Technologies](#Technologies)
+- [App Overview](#App-Overview)
 - [Status](#Status)
+- [How To Use](#How-To-Use)
+- [Technologies](#Technologies)
 
 ## Purpose
 
